@@ -35,13 +35,18 @@ Instead of classic GridSearch, **Optuna** was used. This allowed for searching a
 
 ### Model Performance
 Comparative experiments were conducted between XGBoost and LightGBM.
-* **Selected Model:** [ENTER MODEL HERE, E.G., XGBoost]
-* **ROC AUC Score:** [ENTER SCORE HERE, E.G., 0.7XX]
+* **Selected Model:** XGBOOST
+* **ROC AUC Score:** 0.78
 
 ### Key Risk Factors (Feature Importance)
 SHAP analysis revealed that the most significant factors influencing the credit decision are:
-1.  **EXT_SOURCE (1, 2, 3):** External credit scores – strong negative correlation (higher score = lower default risk).
-2.  **[ENTER FEATURE HERE]:** [Short description].
+1.  **EXT_SOURCE (1, 2, 3):**
+    * **Description:** Normalized scores from external data sources (e.g., credit bureaus).
+    * **Impact:** These features show a strong **negative correlation** with default risk. Higher external scores significantly lower the predicted probability of default, acting as a reliable proxy for the client's past creditworthiness.
+
+2.  **AMT_GOODS_PRICE:**
+    * **Description:** The price of the goods for which the consumer loan is given.
+    * **Impact:** The analysis suggests a **"Wealth Effect"**. Applicants applying for loans for more expensive goods (e.g., higher-end electronics, cars) tend to have a **lower default risk**. This is likely due to higher disposable income levels and stricter verification processes for larger loan amounts.
 
 By using **SHAP Summary Plots**, the model is not a "black box" – every decision can be justified to stakeholders or regulators.
 
