@@ -36,7 +36,7 @@ Instead of classic GridSearch, **Optuna** was used. This allowed for searching a
 ### Model Performance
 Comparative experiments were conducted between XGBoost and LightGBM.
 * **Selected Model:** XGBOOST
-* **ROC AUC Score:** 0.78
+* **ROC AUC Score:** ~0.78
 
 ### Key Risk Factors (Feature Importance)
 SHAP analysis revealed that the most significant factors influencing the credit decision are:
