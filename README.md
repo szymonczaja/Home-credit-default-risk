@@ -5,7 +5,7 @@ The goal of this project is to build an automated **Credit Scoring System** base
 
 The main business challenge was to **maximize the detection of risky clients** (high ROC AUC) while maintaining model interpretability (Explainable AI), which is a key regulatory requirement in the banking sector.
 
-## 🛠 Tech Stack
+## Tech Stack
 The project utilizes a modern Data Science tech stack:
 
 - **Modeling:** `LightGBM`, `XGBoost` (Gradient Boosting Machines).
