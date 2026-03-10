@@ -1,4 +1,4 @@
-## End-to-End Credit Scoring System with MLOps & XAI
+## End-to-End Credit Scoring System with XAI
 
 ## Project Overview
 The goal of this project is to build an automated **Credit Scoring System** based on **Home Credit** data. The system predicts the probability of a client's default, supporting the decision-making process in financial institutions.
